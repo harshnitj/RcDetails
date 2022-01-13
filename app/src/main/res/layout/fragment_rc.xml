@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.RcFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="6dp"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/vehicle_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Vehicle Number"
+                android:inputType="textCapCharacters"
+                android:drawableLeft="@drawable/ic_truck"
+                android:drawablePadding="4dp"
+                android:padding="20dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/rcBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Get Rc details"
+            android:textSize="19dp"
+            android:padding="15dp"/>
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_bg"
+            android:layout_margin="5dp"
+            android:scrollbars="none"
+            android:padding="10dp"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="22sp"
+            android:textColor="@color/teal_200"
+            android:fontFamily="sans-serif-condensed"/>
+    </LinearLayout>
+
+</FrameLayout>
