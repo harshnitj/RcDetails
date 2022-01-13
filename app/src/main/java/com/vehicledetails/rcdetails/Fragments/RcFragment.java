@@ -36,7 +36,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RcFragment extends Fragment {
 
-    static final String API_URL = "http://api.vahaninfos.com/";
+    static final String API_URL = "";
     TextView tv;
     EditText vehicleNum;
     Button rcBtn;
